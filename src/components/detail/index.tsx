@@ -208,10 +208,9 @@ export default function DetailPage({ loading, result }: Props) {
                   fontWeight: 700,
                   color: "#141D57",
                   fontSize: "16px",
-                  whiteSpace: "nowrap",
                 }}
               >
-                <div style={{ whiteSpace: "nowrap" }}>
+                <div style={isDesktop ? { whiteSpace: "nowrap" } : {}}>
                   Found{" "}
                   {
                     <span
