@@ -1,4 +1,4 @@
-import { CircularProgress, Grid, Stack, Typography } from "@mui/material";
+import { CircularProgress, Grid, Stack } from "@mui/material";
 import { useState } from "react";
 import SearchBar from "src/SearchBar";
 import { fetchProducts } from "src/service";
@@ -38,19 +38,11 @@ export default function SearchPage({ handleGetDetail }: Props) {
 
   return (
     <Stack sx={{ maxWidth: "1024px", margin: "auto", width: "100%" }}>
-      <Stack sx={{ px: "24px" }}>
-        <p
-          style={{
-            textAlign: "left",
-            fontSize: "30px",
-            fontWeight: 700,
-            lineHeight: "30px",
-            color: "#141D57",
-            marginBottom: "122px",
-          }}
-        >
-          Skin Scan
-        </p>
+      <Stack sx={{ px: "24px", mt: isDesktop ? "40px" : "20px" }}>
+        <Stack mb={isDesktop ? "166px" : "137px"}>
+          <img src="/skinscanLogo.png" alt="logo" width={"180px"} />
+        </Stack>
+
         <Stack
           sx={{
             color: "#141D57",

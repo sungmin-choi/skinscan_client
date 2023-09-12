@@ -37,7 +37,7 @@ export default function SearchBar({ value, setValue, handleSearch }: Props) {
           fontSize: isDesktop ? "24px" : "18px",
           fontWeight: 600,
         }}
-        placeholder="검색어를 입력해주세요."
+        placeholder="영어로 입력해주세요. ex) skin food"
       />
       <IconButton onClick={handleSearch} type="button" aria-label="search">
         {isDesktop ? <SearchMdIcon /> : <SearchSmIcon />}

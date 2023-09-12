@@ -1,8 +1,6 @@
-import { Stack } from "@mui/material";
 import React, { useState } from "react";
-import CircularProgress from "@mui/material/CircularProgress";
 import { fetchProductDetail } from "./service";
-import { IProduct, IProductAnlyzeResult } from "./type";
+import { IProductAnlyzeResult } from "./type";
 
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import DetailPage from "./components/detail";
