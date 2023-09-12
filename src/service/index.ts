@@ -3,7 +3,7 @@ import { IProduct, IProductAnlyzeResult, IProductRes } from "src/type";
 
 // axios 인스턴스 생성
 const client: Axios = axios.create({
-  baseURL: "http://127.0.0.1:5000",
+  baseURL: "https://api.skinscan.kr",
   headers: {
     "Content-Type": "application/json",
   },
