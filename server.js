@@ -12,6 +12,11 @@ app.get("/ping", (req, res) => {
 
 app.use(express.static(path.join(__dirname, "build")));
 
+app.get("/ads.txt", (req, res) => {
+  // ads.txt 파일을 읽어서 응답으로 전송
+  res.sendFile(__dirname + "/public/ads.txt");
+});
+
 app.get("/*", (req, res) => {
   res.set({
     "Cache-Control": "no-cache, no-store, must-revalidate",
