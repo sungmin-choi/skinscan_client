@@ -14,6 +14,16 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import ExpandedUp from "src/icons/ExpandedUp";
 import ExpandedDown from "src/icons/ExpandedDown";
+import GoogleAdvertise from "../GoogleAdvertise";
+
+const ADProps = {
+  className: "adsbygoogle",
+  client: "ca-pub-4082325421346977",
+  slot: "7723512196",
+  format: "auto",
+  responsive: "true",
+};
+
 const columns: GridColDef[] = [
   {
     field: "ingredient",
@@ -81,6 +91,7 @@ export default function DetailPage({ loading, result }: Props) {
 
   return (
     <Stack sx={{ maxWidth: "1024px", margin: "auto", width: "100%" }}>
+      <GoogleAdvertise {...ADProps} />
       <Stack sx={{ px: "24px", mt: isDesktop ? "40px" : "20px" }}>
         <Stack
           sx={{

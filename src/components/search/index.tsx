@@ -5,8 +5,17 @@ import { fetchProducts } from "src/service";
 import { IProduct, IProductRes } from "src/type";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useNavigate } from "react-router-dom";
+import GoogleAdvertise from "../GoogleAdvertise";
 type Props = {
   handleGetDetail: (url: string, title: string) => void;
+};
+
+const ADProps = {
+  className: "adsbygoogle",
+  client: "ca-pub-4082325421346977",
+  slot: "7723512196",
+  format: "auto",
+  responsive: "true",
 };
 
 export default function SearchPage({ handleGetDetail }: Props) {
@@ -38,6 +47,7 @@ export default function SearchPage({ handleGetDetail }: Props) {
 
   return (
     <Stack sx={{ maxWidth: "1024px", margin: "auto", width: "100%" }}>
+      <GoogleAdvertise {...ADProps} />
       <Stack sx={{ px: "24px", mt: isDesktop ? "40px" : "20px" }}>
         <Stack mb={isDesktop ? "166px" : "137px"}>
           <img src="/skinscanLogo.png" alt="logo" width={"180px"} />
