@@ -91,7 +91,7 @@ export default function DetailPage({ loading, result }: Props) {
 
   return (
     <Stack sx={{ maxWidth: "1024px", margin: "auto", width: "100%" }}>
-      <GoogleAdvertise {...ADProps} />
+      {/* <GoogleAdvertise {...ADProps} /> */}
       <Stack sx={{ px: "24px", mt: isDesktop ? "40px" : "20px" }}>
         <Stack
           sx={{

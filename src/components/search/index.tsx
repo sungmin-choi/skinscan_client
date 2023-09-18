@@ -47,7 +47,7 @@ export default function SearchPage({ handleGetDetail }: Props) {
 
   return (
     <Stack sx={{ maxWidth: "1024px", margin: "auto", width: "100%" }}>
-      <GoogleAdvertise {...ADProps} />
+      {/* <GoogleAdvertise {...ADProps} /> */}
       <Stack sx={{ px: "24px", mt: isDesktop ? "40px" : "20px" }}>
         <Stack mb={isDesktop ? "166px" : "137px"}>
           <img src="/skinscanLogo.png" alt="logo" width={"180px"} />
